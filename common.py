@@ -102,3 +102,12 @@ def write_csv(path, header, rows):
         f.write(header + "\n")
         for r in rows:
             f.write(",".join(fmt(v) for v in r) + "\n")
+
+def read_results(path):
+    out = {}
+    with open(path) as f:
+        for line in f:
+            if " = " in line:
+                k, v = line.strip().split(" = ")
+                out[k] = v
+    return out
