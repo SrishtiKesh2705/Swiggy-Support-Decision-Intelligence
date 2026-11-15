@@ -13,7 +13,6 @@ Everything is written in plain Python with NumPy. Every reported number is compu
 From a clean clone, in this order:
 
 ```bash
-git clone https://github.com/SrishtiKesh2705/Swiggy-Support-Decision-Intelligence
 cd Swiggy-Support-Decision-Intelligence
 pip install -r requirements.txt
 python generate_data.py
